@@ -28,6 +28,7 @@ public class MyGlobalFilter implements GlobalFilter, Ordered {
             return exchange.getResponse().setComplete();
         }
         log.info("success" + "\t" + "id = " + uname);
+        log.info("Congratulate!!!!!!!success");
         return chain.filter(exchange);
     }
 
