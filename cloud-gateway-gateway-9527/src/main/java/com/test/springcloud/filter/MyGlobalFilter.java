@@ -27,6 +27,7 @@ public class MyGlobalFilter implements GlobalFilter, Ordered {
             exchange.getResponse().setStatusCode(HttpStatus.NOT_ACCEPTABLE);
             return exchange.getResponse().setComplete();
         }
+        log.info("success" + "\t" + "id = " + uname);
         return chain.filter(exchange);
     }
 
